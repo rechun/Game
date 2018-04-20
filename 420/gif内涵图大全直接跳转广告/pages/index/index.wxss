@@ -1,0 +1,1255 @@
+/**video.wxss**/
+
+page {
+    position: relative;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*4.9*/
+
+.scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+}
+
+.detailVideo {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.videoWrap {
+    width: 100%;
+    height: 103%;
+    /* height: 100%; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*411*/
+
+.littleCover {
+    width: 100%;
+    z-index: 1
+}
+
+.adCover {
+    width: 100%;
+    height: 103%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#pointCover {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+}
+
+#point {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+    background-image: url('https://raw.githubusercontent.com/rechun/Game/master/wxImages/pointnew.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    display: cover;
+}
+
+.waiting {
+    text-align: center;
+    line-height: 5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+
+/*413*/
+
+#buttonNext {
+    position: absolute;
+    bottom: 2rem;
+    width: 4rem;
+    height: 4rem;
+    left: 40%;
+    /* z-index: 5555; */
+}
+
+.next {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*413*/
+
+
+/*3.19*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 200rpx 0;*/
+    box-sizing: border-box;
+    background: #F0F4F3;
+}
+
+.container.withtab {
+    margin: 105rpx 0 0 0;
+    /*top: 105rpx;*/
+}
+
+.flex-wrp {
+    display: flex;
+}
+
+.flex-tab {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.top-tab {
+    width: 750rpx;
+    height: 100rpx;
+    background: #298DE5;
+    color: #8CCEFD;
+    font-size: 28rpx;
+    line-height: 100rpx;
+    box-shadow: 0 2px 2px #bebebe;
+    margin: 0 0 8rpx 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.toptab.active {
+    color: #ffffff;
+    border-bottom: solid 2px #ffffff;
+}
+
+.container {
+    padding: 0;
+    font-size: 14rpx;
+    color: #000;
+}
+
+.container .feed-item {
+    width: 690rpx;
+    padding: 30rpx 30rpx 20rpx;
+    margin: 7rpx 0 6rpx 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px #eeeeee;
+}
+
+.container .feed-item .feed-source {
+    width: 690rpx;
+    left: 0;
+    height: 50rpx;
+}
+
+.container .feed-item .feed-source .avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.container .feed-item .feed-source a {
+    display: inline-block;
+    height: 40rpx;
+}
+
+.container .feed-item .feed-source .avatar image {
+    /*position: absolute;*/
+    display: inline-block;
+    width: 45rpx;
+    height: 45rpx;
+    border-radius: 45rpx;
+    top: 10rpx;
+    vertical-align: middle;
+}
+
+.container .feed-item .feed-source text {
+    /*position: absolute;*/
+    display: inline-block;
+    height: 40rpx;
+    line-height: 40rpx;
+    vertical-align: middle;
+    margin: 0 0 0 15rpx;
+    color: #a0acac;
+    font-size: 26rpx;
+}
+
+.container .feed-item .feed-source .item-more {
+    display: inline-block;
+    width: 250rpx;
+    height: 45rpx;
+    /* float: right; */
+    overflow: hidden;
+}
+
+.container .feed-item .feed-content {
+    padding: 10rpx 0 0 0;
+}
+
+.container .feed-item .feed-content .question {
+    text-align: center;
+}
+
+.container .feed-item .feed-content .question text {
+    font-size: 28rpx;
+    font-weight: 600px;
+    line-height: 40rpx;
+    /* text-space: 5rpx; */
+}
+
+.container .feed-item .feed-content .answer-body {
+    padding: 10rpx 0 0 0;
+    /*height: 10rpx;*/
+    font-size: 24rpx;
+    line-height: 28rpx;
+    color: #5b5b5b;
+}
+
+.container .feed-item .feed-content .answer-actions {
+    width: 690rpx;
+    padding: 10rpx 0 0;
+    color: #a0acac;
+}
+
+.container .feed-item .feed-content .answer-actions view {
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding: 0 10rpx 0 0;
+    font-size: 24rpx;
+}
+
+.container .feed-item .feed-content .answer-actions .dot ::after {
+    content: "•";
+}
+
+.nextVideo {
+    position: absolute;
+    bottom: -1%;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+}
+
+.nextVideoAd {
+    position: absolute;
+    bottom: -1%;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    z-index: 15;
+}
+
+.nextBtn,
+cover-image {
+    width: 30px;
+    height: 15px;
+    display: block;
+    margin: 10px auto
+}
+
+
+/*topbanner*/
+
+.top-Banner {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+    z-index: 66;
+}
+
+.dyBanner-item,
+.indexItem,
+.top-banner-item {
+    width: 33%;
+    display: inline-block;
+}
+
+.dyBanner {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    justify-content: center;
+}
+
+
+/*列表css*/
+
+.video {
+    position: relative;
+    background-color: #fff;
+}
+
+
+/*2.22*/
+
+#headImg {
+    width: 90%;
+    height: 9.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 5% 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 2px #f2f2f2;
+}
+
+#MyHeadImg {
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+    display: inline-block;
+    border: 1px solid #7b7b7b;
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+#headImage {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#MyNickName {
+    width: 100%;
+    text-align: center;
+    display: block;
+    align-self: center;
+}
+
+#gold {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.glodzone {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.glodzone text {
+    display: block;
+}
+
+#MyBanner {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+#MyJob {
+    width: 90%;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 2px #f2f2f2;
+}
+
+.jobIcon {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: inline-block;
+    top: 0.8rem;
+    position: absolute;
+    left: 1.5rem;
+}
+
+.jobItem {
+    position: relative;
+    width: 100%;
+    line-height: 3rem;
+    height: 3rem;
+    border-bottom: 1px solid #dddcdc;
+}
+
+.jobFirst {
+    position: absolute;
+    left: 3.4rem;
+    line-height: 3rem;
+    font-size: 16px;
+}
+
+.jobsecond {
+    position: absolute;
+    right: 4rem;
+    line-height: 3rem;
+    font-size: 12px;
+    color: #838383;
+}
+
+.itemArrow {
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+
+/*2.27*/
+
+.controls {
+    position: relative;
+    top: 50%;
+    height: 50px;
+    margin-top: -25px;
+    display: flex;
+}
+
+.play,
+.pause,
+.time {
+    flex: 1;
+    height: 100%;
+}
+
+.time {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    line-height: 50px;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+video {
+    width: 100%;
+    padding: 0;
+}
+
+
+/*2.28*/
+
+.shareBtn {
+    outline: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    top: 0.2rem;
+    background-image: url('https://raw.githubusercontent.com/rechun/Game/master/wxImages/font-340.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.goodBtn {
+    outline: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 6rem;
+    bottom: 1rem;
+    top: 0.2rem;
+    background-image: url('https://raw.githubusercontent.com/rechun/Game/master/wxImages/heart98.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.GoodNum {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 3.6rem;
+    line-height: 2rem;
+    bottom: 1rem;
+}
+
+.videoTitle {
+    width: 10rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.videoText {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+
+
+/*3.3*/
+
+.videoImgSrc {
+    width: 100%;
+}
+
+image {
+    margin: 0 auto;
+    display: block;
+}
+
+
+/**/
+
+.coverImage {
+    display: block;
+}
+
+
+/*3.12*/
+
+.videoCoverIcon {
+    width: 30px!important;
+    height: 30px!important;
+    position: absolute;
+    padding: 20px;
+    left: 40%;
+    z-index: 1;
+    top: 31%;
+}
+
+.adImg {
+    z-index: 55;
+}
+
+#cover {
+    width: 100%;
+    position: relative;
+    height: 210px;
+}
+
+.videoItem {
+    position: relative;
+}
+
+.videoTit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0));
+    width: 100%;
+    text-indent: 3%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 21px;
+}
+
+.likeNum {
+    color: #333;
+    font-size: 15px;
+    position: relative;
+    line-height: 40px;
+    left: 20px;
+}
+
+.greyBoder {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e5e5;
+}
+
+.imageBottom {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #fefefe;
+    color: #333;
+    display: flex;
+}
+
+.imageBottomAd {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #fefefe;
+    color: #333;
+    display: flex;
+    left: 0;
+    bottom: 0;
+}
+
+.share {
+    width: 18px!important;
+    height: 15px!important;
+    position: absolute;
+    right: 90px;
+    top: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.shareFriends {
+    right: 25px;
+    color: #333;
+    font-size: 15px;
+    line-height: 40px;
+    position: absolute;
+}
+
+.shareViewAd {
+    z-index: 55;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.shareView {
+    z-index: 55;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+
+/*3.19*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 200rpx 0;*/
+    box-sizing: border-box;
+    background: #F0F4F3;
+}
+
+.container.withtab {
+    margin: 105rpx 0 0 0;
+    /*top: 105rpx;*/
+}
+
+.flex-wrp {
+    display: flex;
+}
+
+.flex-tab {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.top-tab {
+    width: 750rpx;
+    height: 100rpx;
+    background: #298DE5;
+    color: #8CCEFD;
+    font-size: 28rpx;
+    line-height: 100rpx;
+    box-shadow: 0 2px 2px #bebebe;
+    margin: 0 0 8rpx 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.toptab.active {
+    color: #ffffff;
+    border-bottom: solid 2px #ffffff;
+}
+
+.container {
+    padding: 0;
+    font-size: 14rpx;
+    color: #000;
+}
+
+.container .feed-item {
+    width: 690rpx;
+    padding: 30rpx 30rpx 20rpx;
+    margin: 7rpx 0 6rpx 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px #eeeeee;
+}
+
+.container .feed-item .feed-source {
+    width: 690rpx;
+    left: 0;
+    height: 50rpx;
+}
+
+.container .feed-item .feed-source .avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.container .feed-item .feed-source a {
+    display: inline-block;
+    height: 40rpx;
+}
+
+.container .feed-item .feed-source .avatar image {
+    /*position: absolute;*/
+    display: inline-block;
+    width: 45rpx;
+    height: 45rpx;
+    border-radius: 45rpx;
+    top: 10rpx;
+    vertical-align: middle;
+}
+
+.container .feed-item .feed-source text {
+    /*position: absolute;*/
+    display: inline-block;
+    height: 40rpx;
+    line-height: 40rpx;
+    vertical-align: middle;
+    margin: 0 0 0 15rpx;
+    color: #a0acac;
+    font-size: 26rpx;
+}
+
+.container .feed-item .feed-source .item-more {
+    display: inline-block;
+    width: 250rpx;
+    height: 45rpx;
+    /* float: right; */
+    overflow: hidden;
+}
+
+.container .feed-item .feed-content {
+    padding: 10rpx 0 0 0;
+}
+
+.container .feed-item .feed-content .question {
+    text-align: center;
+}
+
+.container .feed-item .feed-content .question text {
+    font-size: 28rpx;
+    font-weight: 600px;
+    line-height: 40rpx;
+    /* text-space: 5rpx; */
+}
+
+.container .feed-item .feed-content .answer-body {
+    padding: 10rpx 0 0 0;
+    /*height: 10rpx;*/
+    font-size: 24rpx;
+    line-height: 28rpx;
+    color: #5b5b5b;
+}
+
+.container .feed-item .feed-content .answer-actions {
+    width: 690rpx;
+    padding: 10rpx 0 0;
+    color: #a0acac;
+}
+
+.container .feed-item .feed-content .answer-actions view {
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding: 0 10rpx 0 0;
+    font-size: 24rpx;
+}
+
+.container .feed-item .feed-content .answer-actions .dot ::after {
+    content: "•";
+}
+
+
+/*3.19*/
+
+.slogan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0));
+    font-size: 21px;
+    color: #fff;
+    text-indent: 3%;
+}
+
+.adBanner {
+    width: 100%;
+    height: 230px;
+    padding-bottom: 1rem;
+    position: relative;
+    border-bottom: 8px solid #e5e5e5;
+}
+
+.adBanner image {
+    height: 210px;
+    width: 100%;
+}
+
+#ToastGold {
+    width: 50%;
+    height: 240px;
+    position: fixed;
+    left: 25%;
+    top: 150px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5%;
+    z-index: 9999;
+}
+
+.goldReward {
+    width: 100px;
+    height: 150px;
+    margin: 20px auto 0;
+    padding: 0;
+}
+
+#ToastGold text {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    color: #fbf137;
+}
+
+
+/*3.29*/
+
+.pageVideo {
+    width: 100%;
+    /* position: relative; */
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+
+
+/*4-16*/
+
+#sign-in {
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    left: 25%;
+    height: 14rem;
+    background-color: #888888;
+    text-align: center;
+    z-index: 2;
+}
+
+.sign-in-succes {
+    font-size: 14px;
+    display: block;
+    color: #000;
+}
+
+.sign-in-glod {
+    font-size: 20px;
+    display: block;
+}
+
+
+/*4.17*/
+
+.top-Banner {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    line-height: 30px;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    z-index: 666;
+}
+
+.top-Banner navigator,
+.indexItem {
+    width: 33%;
+    display: inline-block;
+}
+
+
+/*refresh*/
+
+.scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+}
+
+.detailVideo {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.videoWrap {
+    width: 100%;
+    height: 103%;
+    /* height: 100%; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*411*/
+
+.littleCover {
+    width: 100%;
+    z-index: 1
+}
+
+.adCover {
+    width: 100%;
+    height: 103%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#pointCover {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+}
+
+#point {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+    background-image: url('https://raw.githubusercontent.com/rechun/Game/master/wxImages/pointnew.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    display: cover;
+}
+
+.waiting {
+    text-align: center;
+    line-height: 5rem;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+
+/*413*/
+
+#buttonNext {
+    position: absolute;
+    bottom: 2rem;
+    width: 4rem;
+    height: 4rem;
+    left: 40%;
+    /* z-index: 5555; */
+}
+
+.next {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*413*/
+
+
+/*3.19*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 200rpx 0;*/
+    box-sizing: border-box;
+    background: #F0F4F3;
+}
+
+.container.withtab {
+    margin: 105rpx 0 0 0;
+    /*top: 105rpx;*/
+}
+
+.flex-wrp {
+    display: flex;
+}
+
+.flex-tab {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.top-tab {
+    width: 750rpx;
+    height: 100rpx;
+    background: #298DE5;
+    color: #8CCEFD;
+    font-size: 28rpx;
+    line-height: 100rpx;
+    box-shadow: 0 2px 2px #bebebe;
+    margin: 0 0 8rpx 0;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.toptab.active {
+    color: #ffffff;
+    border-bottom: solid 2px #ffffff;
+}
+
+.container {
+    padding: 0;
+    font-size: 14rpx;
+    color: #000;
+}
+
+.container .feed-item {
+    width: 690rpx;
+    padding: 30rpx 30rpx 20rpx;
+    margin: 7rpx 0 6rpx 0;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px #eeeeee;
+}
+
+.container .feed-item .feed-source {
+    width: 690rpx;
+    left: 0;
+    height: 50rpx;
+}
+
+.container .feed-item .feed-source .avatar {
+    position: relative;
+    display: inline-block;
+}
+
+.container .feed-item .feed-source a {
+    display: inline-block;
+    height: 40rpx;
+}
+
+.container .feed-item .feed-source .avatar image {
+    /*position: absolute;*/
+    display: inline-block;
+    width: 45rpx;
+    height: 45rpx;
+    border-radius: 45rpx;
+    top: 10rpx;
+    vertical-align: middle;
+}
+
+.container .feed-item .feed-source text {
+    /*position: absolute;*/
+    display: inline-block;
+    height: 40rpx;
+    line-height: 40rpx;
+    vertical-align: middle;
+    margin: 0 0 0 15rpx;
+    color: #a0acac;
+    font-size: 26rpx;
+}
+
+.container .feed-item .feed-source .item-more {
+    display: inline-block;
+    width: 250rpx;
+    height: 45rpx;
+    /* float: right; */
+    overflow: hidden;
+}
+
+.container .feed-item .feed-content {
+    padding: 10rpx 0 0 0;
+}
+
+.container .feed-item .feed-content .question {
+    text-align: center;
+}
+
+.container .feed-item .feed-content .question text {
+    font-size: 28rpx;
+    font-weight: 600px;
+    line-height: 40rpx;
+    /* text-space: 5rpx; */
+}
+
+.container .feed-item .feed-content .answer-body {
+    padding: 10rpx 0 0 0;
+    /*height: 10rpx;*/
+    font-size: 24rpx;
+    line-height: 28rpx;
+    color: #5b5b5b;
+}
+
+.container .feed-item .feed-content .answer-actions {
+    width: 690rpx;
+    padding: 10rpx 0 0;
+    color: #a0acac;
+}
+
+.container .feed-item .feed-content .answer-actions view {
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding: 0 10rpx 0 0;
+    font-size: 24rpx;
+}
+
+.container .feed-item .feed-content .answer-actions .dot ::after {
+    content: "•";
+}
+
+.nextVideo {
+    position: absolute;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+}
+
+.nextVideoAd {
+    position: absolute;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 0;
+    z-index: 15;
+}
+
+.nextBtn,
+cover-image {
+    width: 30px;
+    height: 15px;
+    display: block;
+    margin: 10px auto
+}
+
+
+/*417*/
+
+.bannerTOP {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 55;
+}
